@@ -1,0 +1,37 @@
+/* style.css: custom dashboard tweaks */
+body {
+    background: #f8fafc;
+}
+.sidebar {
+    min-height: 100vh;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.05);
+}
+.sidebar .nav-link {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+.sidebar .nav-link.active {
+    background: #198754;
+    color: #fff !important;
+}
+.main-content section {
+    display: none;
+}
+.main-content section.active {
+    display: block;
+    animation: fadeIn .4s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Table rows on hover */
+.table-hover tbody tr:hover {
+    background: #e9ecef;
+}
+.sortable {
+    cursor: pointer;
+}
+.toast {
+    min-width: 230px;
+}
